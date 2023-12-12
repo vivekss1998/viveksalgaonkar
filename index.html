@@ -8,6 +8,8 @@
     <meta name="description" content="Welcome to Portfolio.UX-designer Full-Stack Web Developer and Android App Developer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
@@ -523,6 +525,48 @@
 
 <script type="text/javascript">
   emailjs.init('78WoDrljlN6k5l29F')
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Select the "View More" link
+    var viewMoreLink = document.querySelector('.viewall a');
+
+    // Add a click event listener to the link
+    viewMoreLink.addEventListener('click', function (event) {
+      // Prevent the default behavior of the link
+      event.preventDefault();
+
+      // Display the SweetAlert pop-up with the message
+      Swal.fire({
+        title: 'Nothing to view more',
+        text: '',
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      });
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Select the "View More" link
+    var viewMoreLink = document.querySelector('.morebtn a');
+
+    // Add a click event listener to the link
+    viewMoreLink.addEventListener('click', function (event) {
+      // Prevent the default behavior of the link
+      event.preventDefault();
+
+      // Display the SweetAlert pop-up with the message
+      Swal.fire({
+        title: 'Nothing to view more',
+        text: '',
+        icon: 'warning',
+        confirmButtonText: 'OK'
+      });
+    });
+  });
 </script>
 </body>
 </html>
